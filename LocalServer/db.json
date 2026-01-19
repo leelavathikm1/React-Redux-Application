@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fname": "Arjun",
+      "lname": "Sharma",
+      "email": "arjun.sharma@gmail.com"
+    },
+    {
+      "id": 4,
+      "fname": "Sneha",
+      "lname": "Patel",
+      "email": "sneha.patel@gmail.com"
+    },
+    {
+      "id": 5,
+      "fname": "Kiran",
+      "lname": "Reddy",
+      "email": "kiran.reddy@gmail.com"
+    }
+  ]
+}

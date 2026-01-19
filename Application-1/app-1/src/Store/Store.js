@@ -4,5 +4,7 @@ import useReducer from "../User-Components/UserSlice";
 export const store = configureStore({
   reducer: {
     users: useReducer,
+    products: {},
+    employees: {},
   },
 });
