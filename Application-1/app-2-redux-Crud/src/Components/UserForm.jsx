@@ -1,7 +1,25 @@
-export default function UserForm() {
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addUser, updateUser } from "../Store/UserSlice";
 
-const
+export default function UserForm({ selectedUser, clear }) {
+  const [user, setUser] = useState(
+    selectedUser || { fname: "", lname: "", email: "" },
+  );
 
+  const dispatch = useDispatch();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (user.id) {
+      dispatch(updateUser(user));
+    } else {
+      dispatch(addUser(user));
+    }
+
+    clear();
+    setUser({ fname: "", lname: "", email: "" });
+  };
 
   return (
     <form>
