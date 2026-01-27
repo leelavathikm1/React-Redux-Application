@@ -6,12 +6,12 @@ const initialState = {
 const API_URL = "http://localhost:3000/users";
 
 export const createUserAsyncAction = createAsyncThunk(
-  "users/getAllUserAsync",
+  "users/createUserAsync",
   async () => {},
 );
 
 export const getAllUserAsyncAction = createAsyncThunk(
-  "users/createUserAsync",
+  "users/ getAllUserAsync",
   async () => {
     console.log("getAllUserAsyncAction called");
     const response = await fetch(API_URL);
